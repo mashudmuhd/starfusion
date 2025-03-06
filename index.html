@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Star Fusion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white p-6 fixed w-full top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo/logo.png" alt="The Star Fusion Logo" class="h-12 w-auto sm:h-14 hover:opacity-80 transition duration-300">
+      </a>
+
+      <!-- Desktop Navbar -->
+      <ul class="hidden md:flex space-x-6 relative">
+        <li><a href="index.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Home</a></li>
+        <li><a href="about.html" class="text-gray-900 hover:text-purple-500 transition duration-300">About</a></li>
+        
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="#" class="text-gray-900 hover:text-purple-500 transition duration-300">Products</a>
+          <ul class="absolute left-0 mt-2 w-56 bg-white text-gray-900 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
+            <li><a href="cleaning-materials.html" class="block px-4 py-2 hover:bg-purple-100">Cleaning Materials</a></li>
+            <li><a href="disposable-items.html" class="block px-4 py-2 hover:bg-purple-100">Disposable Items</a></li>
+            <li><a href="food-packing.html" class="block px-4 py-2 hover:bg-purple-100">Food Packing Materials</a></li>
+            <li><a href="plastic-materials.html" class="block px-4 py-2 hover:bg-purple-100">Plastic Materials</a></li>
+            <li><a href="office-stationery.html" class="block px-4 py-2 hover:bg-purple-100">Office Stationery</a></li>
+            <li><a href="toners.html" class="block px-4 py-2 hover:bg-purple-100">Toners</a></li>
+            <li><a href="pantry-materials.html" class="block px-4 py-2 hover:bg-purple-100">Pantry Materials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-gray-900 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="hidden bg-white text-gray-900 p-4 md:hidden">
+      <ul class="space-y-4">
+        <li><a href="index.html" class="block hover:text-purple-500 transition duration-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-purple-500 transition duration-300">About</a></li>
+        
+        <!-- Mobile Products Dropdown -->
+        <li class="relative">
+          <button id="mobile-products-btn" class="w-full text-left hover:text-purple-500 transition duration-300">Products</button>
+          <ul id="mobile-products-menu" class="hidden mt-2 space-y-2 bg-gray-100 p-2 rounded-lg">
+            <li><a href="cleaning-materials.html" class="block px-4 py-2 hover:bg-purple-100">Cleaning Materials</a></li>
+            <li><a href="disposable-items.html" class="block px-4 py-2 hover:bg-purple-100">Disposable Items</a></li>
+            <li><a href="food-packing.html" class="block px-4 py-2 hover:bg-purple-100">Food Packing Materials</a></li>
+            <li><a href="plastic-materials.html" class="block px-4 py-2 hover:bg-purple-100">Plastic Materials</a></li>
+            <li><a href="office-stationery.html" class="block px-4 py-2 hover:bg-purple-100">Office Stationery</a></li>
+            <li><a href="toners.html" class="block px-4 py-2 hover:bg-purple-100">Toners</a></li>
+            <li><a href="pantry-materials.html" class="block px-4 py-2 hover:bg-purple-100">Pantry Materials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html" class="block hover:text-purple-500 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-green-800 to-gray-700">
+    <div class="text-center animate-fadeIn">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to The Star Fusion</h1>
+      <p class="text-xl md:text-2xl mb-8">Your gateway to stellar experiences</p>
+      <a href="about.html" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition duration-300">Explore More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about" class="py-16 bg-white-800 text-center">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-4">About Us</h2>
+    <p class="text-lg mb-6">
+      The Star Fusion is dedicated to providing high-quality products that meet your needs. 
+      We strive for excellence in every service we offer.
+    </p>
+    <a href="about.html" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300">
+      Read More
+    </a>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2023 The Star Fusion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    document.getElementById("menu-btn").addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // Mobile Dropdown Menu Toggle
+    document.getElementById("mobile-products-btn").addEventListener("click", function () {
+      document.getElementById("mobile-products-menu").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>

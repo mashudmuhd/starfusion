@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Star Fusion - Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+ <!-- Navbar -->
+ <nav class="bg-white p-6 fixed w-full top-0 z-50 shadow-md">
+  <div class="container mx-auto flex justify-between items-center">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center">
+      <img src="assets/images/logo/logo.png" alt="The Star Fusion Logo" class="h-12 w-auto sm:h-14 hover:opacity-80 transition duration-300">
+    </a>
+
+    <!-- Desktop Navbar -->
+    <ul class="hidden md:flex space-x-6 relative">
+      <li><a href="index.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Home</a></li>
+      <li><a href="about.html" class="text-gray-900 hover:text-purple-500 transition duration-300">About</a></li>
+      
+      <!-- Products Dropdown -->
+      <li class="relative group">
+        <a href="#" class="text-gray-900 hover:text-purple-500 transition duration-300">Products</a>
+        <ul class="absolute left-0 mt-2 w-56 bg-white text-gray-900 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
+          <li><a href="cleaning-materials.html" class="block px-4 py-2 hover:bg-purple-100">Cleaning Materials</a></li>
+          <li><a href="disposable-items.html" class="block px-4 py-2 hover:bg-purple-100">Disposable Items</a></li>
+          <li><a href="food-packing.html" class="block px-4 py-2 hover:bg-purple-100">Food Packing Materials</a></li>
+          <li><a href="plastic-materials.html" class="block px-4 py-2 hover:bg-purple-100">Plastic Materials</a></li>
+          <li><a href="office-stationery.html" class="block px-4 py-2 hover:bg-purple-100">Office Stationery</a></li>
+          <li><a href="toners.html" class="block px-4 py-2 hover:bg-purple-100">Toners</a></li>
+          <li><a href="pantry-materials.html" class="block px-4 py-2 hover:bg-purple-100">Pantry Materials</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-gray-900 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu (Initially Hidden) -->
+  <div id="mobile-menu" class="hidden bg-white text-gray-900 p-4 md:hidden">
+    <ul class="space-y-4">
+      <li><a href="index.html" class="block hover:text-purple-500 transition duration-300">Home</a></li>
+      <li><a href="about.html" class="block hover:text-purple-500 transition duration-300">About</a></li>
+      
+      <!-- Mobile Products Dropdown -->
+      <li class="relative">
+        <button id="mobile-products-btn" class="w-full text-left hover:text-purple-500 transition duration-300">Products</button>
+        <ul id="mobile-products-menu" class="hidden mt-2 space-y-2 bg-gray-100 p-2 rounded-lg">
+          <li><a href="cleaning-materials.html" class="block px-4 py-2 hover:bg-purple-100">Cleaning Materials</a></li>
+          <li><a href="disposable-items.html" class="block px-4 py-2 hover:bg-purple-100">Disposable Items</a></li>
+          <li><a href="food-packing.html" class="block px-4 py-2 hover:bg-purple-100">Food Packing Materials</a></li>
+          <li><a href="plastic-materials.html" class="block px-4 py-2 hover:bg-purple-100">Plastic Materials</a></li>
+          <li><a href="office-stationery.html" class="block px-4 py-2 hover:bg-purple-100">Office Stationery</a></li>
+          <li><a href="toners.html" class="block px-4 py-2 hover:bg-purple-100">Toners</a></li>
+          <li><a href="pantry-materials.html" class="block px-4 py-2 hover:bg-purple-100">Pantry Materials</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html" class="block hover:text-purple-500 transition duration-300">Contact</a></li>
+    </ul>
+  </div>
+
+</nav>
+
+
+ <!-- Contact Section -->
+<section class="py-20 bg-gray-800 px-6">
+  <div class="container mx-auto px-6 p-6">
+    <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Contact Information -->
+      <div class="bg-gray-700 p-6 rounded-lg text-white">
+        <h3 class="text-2xl font-semibold mb-4">Our Address</h3>
+        <p class="flex items-center mb-2">
+          <svg class="w-6 h-6 text-purple-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13 21.314V13H4.343l4.657-4.657A8 8 0 1120 12a7.972 7.972 0 01-2.343 5.657z"></path>
+          </svg>
+          Al Dana District - Al Jubail -35514 - KSA 
+        </p>
+
+        <h3 class="text-2xl font-semibold mt-6 mb-4">Contact Us</h3>
+        <p class="flex items-center mb-2">
+          <svg class="w-6 h-6 text-purple-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10v11a1 1 0 001 1h16a1 1 0 001-1V10"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 21V7a3 3 0 016 0v14"></path>
+          </svg>
+          +966507993108
+        </p>
+        <p class="flex items-center">
+          <svg class="w-6 h-6 text-purple-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10v11a1 1 0 001 1h16a1 1 0 001-1V10"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 21V7a3 3 0 016 0v14"></path>
+          </svg>
+          info@thestarfusion.com
+        </p>
+      </div>
+
+      <!-- Google Maps -->
+      <div>
+        <iframe class="w-full h-72 rounded-lg shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4623.180529755399!2d49.66361167315875!3d27.011669776439476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e35a1f74f2d4ab1%3A0x5e47f59f75825f61!2sAl%20Dana%20District%2C%20Al%20Jubail%2035514%2C%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1709735554321!5m2!1sen!2ssa" 
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    </div>
+
+    <!-- Contact Form -->
+    <form class="max-w-lg mx-auto mt-10">
+      <div class="mb-6">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+      </div>
+      <div class="mb-6">
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+      </div>
+      <div class="mb-6">
+        <textarea placeholder="Your Message" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-600" rows="5"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition duration-300">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+</body>
+<script>
+  // Mobile Menu Toggle
+  document.getElementById("menu-btn").addEventListener("click", function () {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  });
+
+  // Mobile Dropdown Menu Toggle
+  document.getElementById("mobile-products-btn").addEventListener("click", function () {
+    document.getElementById("mobile-products-menu").classList.toggle("hidden");
+  });
+</script>
+</html>

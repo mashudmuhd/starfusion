@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Star Fusion - About</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+   <!-- Navbar -->
+   <nav class="bg-white p-6 fixed w-full top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo/logo.png" alt="The Star Fusion Logo" class="h-12 w-auto sm:h-14 hover:opacity-80 transition duration-300">
+      </a>
+
+      <!-- Desktop Navbar -->
+      <ul class="hidden md:flex space-x-6 relative">
+        <li><a href="index.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Home</a></li>
+        <li><a href="about.html" class="text-gray-900 hover:text-purple-500 transition duration-300">About</a></li>
+        
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="#" class="text-gray-900 hover:text-purple-500 transition duration-300">Products</a>
+          <ul class="absolute left-0 mt-2 w-56 bg-white text-gray-900 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
+            <li><a href="cleaning-materials.html" class="block px-4 py-2 hover:bg-purple-100">Cleaning Materials</a></li>
+            <li><a href="disposable-items.html" class="block px-4 py-2 hover:bg-purple-100">Disposable Items</a></li>
+            <li><a href="food-packing.html" class="block px-4 py-2 hover:bg-purple-100">Food Packing Materials</a></li>
+            <li><a href="plastic-materials.html" class="block px-4 py-2 hover:bg-purple-100">Plastic Materials</a></li>
+            <li><a href="office-stationery.html" class="block px-4 py-2 hover:bg-purple-100">Office Stationery</a></li>
+            <li><a href="toners.html" class="block px-4 py-2 hover:bg-purple-100">Toners</a></li>
+            <li><a href="pantry-materials.html" class="block px-4 py-2 hover:bg-purple-100">Pantry Materials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-gray-900 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="hidden bg-white text-gray-900 p-4 md:hidden">
+      <ul class="space-y-4">
+        <li><a href="index.html" class="block hover:text-purple-500 transition duration-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-purple-500 transition duration-300">About</a></li>
+        
+        <!-- Mobile Products Dropdown -->
+        <li class="relative">
+          <button id="mobile-products-btn" class="w-full text-left hover:text-purple-500 transition duration-300">Products</button>
+          <ul id="mobile-products-menu" class="hidden mt-2 space-y-2 bg-gray-100 p-2 rounded-lg">
+            <li><a href="cleaning-materials.html" class="block px-4 py-2 hover:bg-purple-100">Cleaning Materials</a></li>
+            <li><a href="disposable-items.html" class="block px-4 py-2 hover:bg-purple-100">Disposable Items</a></li>
+            <li><a href="food-packing.html" class="block px-4 py-2 hover:bg-purple-100">Food Packing Materials</a></li>
+            <li><a href="plastic-materials.html" class="block px-4 py-2 hover:bg-purple-100">Plastic Materials</a></li>
+            <li><a href="office-stationery.html" class="block px-4 py-2 hover:bg-purple-100">Office Stationery</a></li>
+            <li><a href="toners.html" class="block px-4 py-2 hover:bg-purple-100">Toners</a></li>
+            <li><a href="pantry-materials.html" class="block px-4 py-2 hover:bg-purple-100">Pantry Materials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html" class="block hover:text-purple-500 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+  <!-- About Section -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6 p-6 ">
+      <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <img src="assets/images/about.png" alt="About Us" class="rounded-lg shadow-lg">
+        </div>
+        <div>
+          <p class="text-lg mb-4">At <span class="text-purple-400 font-bold">StarFusion</span>, we are committed to providing high-quality products that cater to various business and personal needs. With a focus on reliability, efficiency, and customer satisfaction, we offer a wide range of essential supplies, including:</p>
+          <ul class="list-disc list-inside mb-4 text-lg">
+            <li><strong>Cleaning Materials</strong> – Ensuring hygiene and cleanliness with top-tier cleaning solutions.</li>
+            <li><strong>Disposable Items</strong> – Convenient and eco-friendly options for various industries.</li>
+            <li><strong>Food Packing Materials</strong> – Safe and durable packaging for food storage and delivery.</li>
+            <li><strong>Plastic Materials</strong> – High-quality plastic products for diverse applications.</li>
+            <li><strong>Office Stationery</strong> – All the essential office supplies to keep your business running smoothly.</li>
+            <li><strong>Toners</strong> – Premium-quality printer toners for sharp and long-lasting prints.</li>
+            <li><strong>Pantry Materials</strong> – Stocking your workspace with essential pantry items like tea bags, coffee, biscuits, sugar, water, chocolate, and dry fruits.</li>
+          </ul>
+          <p class="text-lg">With a strong commitment to excellence, <span class="text-purple-400 font-bold">StarFusion</span> is your trusted partner for all your supply needs. We prioritize quality, affordability, and prompt service to ensure your business operations remain seamless.</p>
+          <p class="text-lg mt-4">Get in touch with us today and experience the <span class="text-purple-400 font-bold">StarFusion</span> difference!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    // Mobile Menu Toggle
+    document.getElementById("menu-btn").addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // Mobile Dropdown Menu Toggle
+    document.getElementById("mobile-products-btn").addEventListener("click", function () {
+      document.getElementById("mobile-products-menu").classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
