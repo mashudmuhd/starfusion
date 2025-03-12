@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Star Fusion</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Custom animations */
@@ -85,26 +87,38 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-r from-green-800 to-gray-700">
-    <div class="text-center animate-fadeIn">
-      <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to The Star Fusion</h1>
-      <p class="text-xl md:text-2xl mb-8">Your gateway to stellar experiences</p>
-      <a href="about.html" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition duration-300">Explore More</a>
+<section id="home" class="relative w-full h-screen">
+  <!-- Image Carousel -->
+   <!-- Image Carousel (Set z-0 to keep it below the overlay) -->
+   <div class="swiper mySwiper absolute inset-0 z-0">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="assets/images/carousal_one.jpg" class="w-full h-full object-cover" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/images/cleaning_materials.jpg" class="w-full h-full object-cover" alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+            <img src="assets/images/plastic_metrials.jpg" class="w-full h-full object-cover" alt="Slide 3">
+        </div>
     </div>
-  </section>
 
-  <!-- About Section -->
-<section id="about" class="py-16 bg-white-800 text-center">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold mb-4">About Us</h2>
-    <p class="text-lg mb-6">
-      The Star Fusion is dedicated to providing high-quality products that meet your needs. 
-      We strive for excellence in every service we offer.
-    </p>
-    <a href="about.html" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300">
-      Read More
-    </a>
-  </div>
+    <!-- Pagination (Indicators) -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next text-white"></div>
+    <div class="swiper-button-prev text-white"></div>
+</div>
+
+<!-- Overlay (Set z-10 to make it visible) -->
+<div class="absolute inset-0 z-10 bg-black bg-opacity-50 flex items-center justify-center text-center text-white px-4">
+    <div class="animate-fadeIn">
+        <h1 class="text-4xl md:text-7xl font-bold mb-4">Welcome to The Star Fusion</h1>
+        <p class="text-lg md:text-2xl mb-8">Your gateway to stellar experiences</p>
+        <a href="about.html" class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition duration-300">Explore More</a>
+    </div>
+</div>
 </section>
 
 
@@ -115,8 +129,24 @@
       <p>&copy; 2023 The Star Fusion. All rights reserved.</p>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
+     var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        effect: "fade",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
     // Mobile Menu Toggle
     document.getElementById("menu-btn").addEventListener("click", function () {
       document.getElementById("mobile-menu").classList.toggle("hidden");
