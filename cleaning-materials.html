@@ -18,14 +18,28 @@
 <body class="bg-gray-900 text-white font-sans">
 
 <!-- Navbar -->
-<nav class="bg-white p-6 fixed w-full top-0 z-50 shadow-md">
+  <!-- Navbar -->
+  <nav class="bg-white p-6 fixed w-full top-0 z-50 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
+       <!-- Logo -->
        <a href="index.html" class="flex items-center">
         <img src="assets/images/logo/logo.png" alt="The Star Fusion Logo" class="h-12 w-auto sm:h-14 hover:opacity-80 transition duration-300">
       </a>
-      <ul class="hidden md:flex space-x-6">
+      <ul class="hidden md:flex space-x-6 relative">
         <li><a href="index.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Home</a></li>
         <li><a href="about.html" class="text-gray-900 hover:text-purple-500 transition duration-300">About</a></li>
+        <li class="relative group">
+          <a href="#" class="text-gray-900 hover:text-purple-500 transition duration-300">Products</a>
+          <ul class="absolute left-0 mt-2 w-56 bg-white text-gray-900 shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
+            <li><a href="cleaning-materials.html" class="block px-4 py-2 hover:bg-purple-100">Cleaning Materials</a></li>
+            <li><a href="disposable-items.html" class="block px-4 py-2 hover:bg-purple-100">Disposable Items</a></li>
+            <li><a href="food-packing.html" class="block px-4 py-2 hover:bg-purple-100">Food Packing Materials</a></li>
+            <li><a href="plastic-materials.html" class="block px-4 py-2 hover:bg-purple-100">Plastic Materials</a></li>
+            <li><a href="office-stationery.html" class="block px-4 py-2 hover:bg-purple-100">Office Stationery</a></li>
+            <li><a href="toners.html" class="block px-4 py-2 hover:bg-purple-100">Toners</a></li>
+            <li><a href="pantry-materials.html" class="block px-4 py-2 hover:bg-purple-100">Pantry Materials</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html" class="text-gray-900 hover:text-purple-500 transition duration-300">Contact</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden text-gray-900 focus:outline-none">
@@ -34,7 +48,21 @@
         </svg>
       </button>
     </div>
-</nav>
+    <div id="mobile-menu" class="hidden bg-white text-gray-900 p-4 md:hidden">
+      <ul class="space-y-4">
+        <li><a href="index.html" class="block hover:text-purple-500 transition duration-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-purple-500 transition duration-300">About</a></li>
+        <li><a href="cleaning-materials.html" class="block hover:text-purple-500 transition duration-300">Cleaning Materials</a></li>
+        <li><a href="disposable-items.html" class="block hover:text-purple-500 transition duration-300">Disposable Items</a></li>
+        <li><a href="food-packing.html" class="block hover:text-purple-500 transition duration-300">Food Packing Materials</a></li>
+        <li><a href="plastic-materials.html" class="block hover:text-purple-500 transition duration-300">Plastic Materials</a></li>
+        <li><a href="office-stationery.html" class="block hover:text-purple-500 transition duration-300">Office Stationery</a></li>
+        <li><a href="toners.html" class="block hover:text-purple-500 transition duration-300">Toners</a></li>
+        <li><a href="pantry-materials.html" class="block hover:text-purple-500 transition duration-300">Pantry Materials</a></li>
+        <li><a href="contact.html" class="block hover:text-purple-500 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
 <!-- Header Section -->
 <section class="pt-24 text-center animate-fadeIn">
